@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: #101010;
+    --second-bg-color: #202020;
+    --main-color: #c70000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    height: 1080px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar .logo {
+    margin-top: 55px;
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.links a {
+    position: relative;
+    color: white;
+    margin: 35px;
+}
+
+.navbar .links a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.navbar .links a:hover::after {
+    width: 70%;
+}
+/* FIM DE NAVBAR */
+
+/* HOME */
+
+header .home {
+    display: flex;
+    margin-bottom: 300px;
+}
+
+.home .text h1 {
+    margin: 240px 0 20px 100px;
+    font-size: 50px;
+    
+}
+
+.home .text p {
+    margin: 0 0 0 100px;
+    width: 500px;
+}
+
+.home img {
+    margin: 240px 0 20px 400px;
+}
+
+
+/* FIM DE HOME */
+
+/*  */
